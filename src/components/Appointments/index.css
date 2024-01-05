@@ -1,0 +1,148 @@
+/* Write your CSS here */
+.appointment-app-container {
+  background-image: linear-gradient(#fbc7d4, #9796f0);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 20px;
+  font-family: 'Roboto';
+}
+
+@media screen and (min-width: 768px) {
+  .appointment-app-container {
+    padding: 70px 20px;
+  }
+}
+
+.sub-appointment-app-container {
+  width: 90%;
+  max-width: 1140px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.app-title {
+  font-size: 24px;
+  color: #171f46;
+}
+
+.form-img-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-bottom: 3px solid #b5b7c4;
+  padding-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .app-title {
+    font-size: 28px;
+  }
+
+  .form-img-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .form-container {
+    width: 50%;
+  }
+}
+
+label {
+  color: #b5b7c4;
+  font-size: 13px;
+  font-weight: 500;
+  margin-bottom: 7px;
+}
+
+input {
+  padding: 0px 15px;
+  height: 40px;
+  width: 100%;
+  border: 1px solid #b5b7c4;
+  border-radius: 5px;
+  outline: none;
+}
+
+.add-btn {
+  background: #8b5cf6;
+  border: none;
+  outline: none;
+  color: #fff;
+  padding: 6px 15px;
+  border-radius: 5px;
+  align-self: flex-start;
+  cursor: pointer;
+}
+
+.appointment-img {
+  width: 90%;
+  max-width: 350px;
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .appointment-img {
+    display: block;
+  }
+}
+
+.bottom-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.appointment-heading {
+  color: #171f46;
+  font-size: 24px;
+}
+
+.starred-btn {
+  background: transparent;
+  border: 1px solid #9897f0;
+  color: #9897f0;
+  outline: none;
+  cursor: pointer;
+  height: 25px;
+  width: 80px;
+  border-radius: 20px;
+  font-weight: 600;
+}
+
+.active-btn {
+  background: #9897f0;
+  color: #fff;
+}
+
+.appointments-list {
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  .appointments-list {
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}

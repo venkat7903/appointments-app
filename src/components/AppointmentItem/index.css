@@ -1,0 +1,42 @@
+/* Write your CSS here */
+.appointment-item {
+  border: 1px solid #b5b7c4;
+  width: 100%;
+  padding: 5px 15px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+@media screen and (min-width: 768px) {
+  .appointment-item {
+    width: 40%;
+    max-width: 350px;
+  }
+}
+
+.title-star-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.appointment-title {
+  color: #171f46;
+  font-size: 18px;
+}
+
+.star-btn {
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.date {
+  color: #b5b7c4;
+  font-size: 14px;
+}
